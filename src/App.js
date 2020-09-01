@@ -1,12 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import HeaderComp from "./Components/HeaderComp";
+import { FooterComp } from "./Components/FooterComp";
+import "./App.css";
 
 function App() {
-  return (
-    <>
-      <h1>Hello World!</h1>
-    </>
-  );
+    return (
+        <>
+            <HeaderComp />
+            <FooterComp />
+        </>
+    );
 }
 
 export default App;
