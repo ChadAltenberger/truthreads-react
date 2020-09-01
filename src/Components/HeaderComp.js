@@ -1,12 +1,32 @@
 import React, { Component } from "react";
-import { Navbar, Nav, NavbarToggler, NavbarBrand, NavItem } from "reactstrap";
+import {
+    Navbar,
+    Nav,
+    NavbarToggler,
+    NavbarBrand,
+    NavItem,
+    Collapse,
+} from "reactstrap";
 
 class HeaderComp extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            isNavOpen: false,
+        };
+    }
+
+    toggleNav = () => {
+        this.setState({
+            isNavOpen: !this.state.isNavOpen,
+        });
+    };
     render() {
         return (
-            <React.Fragment>
-                <Navbar dark sticky="top" expand="md">
-                    <div className="container">
+            <>
+                <Navbar className="navbar navbar-expand-md navbar-light bg-white sticky-top">
+                    <div className="container-fluid">
                         <NavbarBrand className="mr-auto" href="/">
                             <img
                                 src="./assets/images/logo.png"
@@ -15,16 +35,19 @@ class HeaderComp extends Component {
                                 alt="Truthreads Logo"
                             />
                         </NavbarBrand>
-                        <Nav navbar>
-                            <NavItem>Home</NavItem>
-                            <NavItem>Directory</NavItem>
-                            <NavItem>About</NavItem>
-                            <NavItem>Shop</NavItem>
-                            <NavItem>Contact Us</NavItem>
-                        </Nav>
+                        <NavbarToggler onClick={this.toggleNav} />
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav navbar className="ml-auto">
+                                <NavItem className="active">Home</NavItem>
+                                <NavItem>About Us</NavItem>
+                                <NavItem>Services</NavItem>
+                                <NavItem>Shop</NavItem>
+                                <NavItem>Contact</NavItem>
+                            </Nav>
+                        </Collapse>
                     </div>
                 </Navbar>
-            </React.Fragment>
+            </>
         );
     }
 }
