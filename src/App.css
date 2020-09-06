@@ -1,238 +1,239 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 #homeNav {
-    padding: 0;
+  padding: 0;
 }
 
 #mainNavbar {
-    border-bottom: solid 0.25px #d1d1d1;
+  border-bottom: solid 0.25px #d1d1d1;
 }
 
 body {
-    font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 #intro {
-    margin: 0px;
-    padding-top: 75px;
-    padding-bottom: 70px;
+  margin: 0px;
+  padding-top: 75px;
+  padding-bottom: 70px;
 }
 
 #intro::before {
-    content: "";
-    background-color: gray;
-    background-image: url(./introBackground2.jpg);
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.5;
+  content: "";
+  background-color: gray;
+  background-image: url(./introBackground2.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
 }
 
 #intro h1 {
-    position: relative;
-    font-size: 6em;
-    font-weight: lighter;
-    margin-left: 20%;
+  position: relative;
+  font-size: 6em;
+  font-weight: lighter;
+  margin-left: 20%;
 }
 
 #intro h3 {
-    position: relative;
-    font-size: 3em;
-    font-weight: lighter;
-    margin-left: 45%;
+  position: relative;
+  font-size: 3em;
+  font-weight: lighter;
+  margin-left: 45%;
 }
 
 #intro p {
-    font-size: larger;
+  font-size: larger;
 }
 
 #intro hr {
-    border: 0.5px solid;
-    width: 60%;
-    align-items: center;
+  border: 0.5px solid;
+  width: 60%;
+  align-items: center;
 }
 
 #modalHeader {
-    background-color: #212181;
-    color: white;
+  background-color: #212181;
+  color: white;
 }
 
 #modalClose {
-    color: white;
+  color: white;
 }
 
 #welcome {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Rubik", sans-serif;
 }
 
 #welcomeCard {
-    border: solid 1px;
-    min-width: 100%;
-    background-color: #f1f1f1;
+  border: solid 1px;
+  min-width: 100%;
+  background-color: #f1f1f1;
 }
 
 #welcomeCol {
-    padding: 0;
+  padding: 0;
 }
 
 .carousel {
-    border: solid #4b4a4a;
-    margin-top: 0;
+  border: solid #4b4a4a;
+  margin-top: 0;
 }
 
 .carousel-caption p {
-    font-family: "Rubik", sans-serif;
-    font-weight: lighter;
-    font-size: larger;
-    background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Rubik", sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .row-content {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 #contactForm {
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    margin-top: 100px;
-    padding: 20px;
-    margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-top: 100px;
+  padding: 20px;
+  margin-bottom: 25px;
 }
 
 #contactForm a {
-    color: #e6e1e1;
+  color: #e6e1e1;
 }
 
 button a {
-    color: white;
+  color: white;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .site-footer {
-    padding: 25px;
-    border-top: solid 0.25px #d1d1d1;
-    background-color: #ebebeb;
+  padding: 25px;
+  border-top: solid 0.25px #d1d1d1;
+  background-color: #ebebeb;
 }
 .site-footer .btn {
-    color: black;
+  color: black;
 }
 
 #aboutPhoto {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 #aboutBreak {
-    border: 1px solid;
-    width: 60%;
-    align-items: center;
-    margin-bottom: 40px;
+  border: 1px solid;
+  width: 60%;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 #descriptionContent {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* SERVICES */
 #servicesTitle {
-    padding: 35px;
+  padding: 35px;
 }
 
 #servicesContent {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 #servicesContent hr {
-    border: 0.5px solid;
-    width: 60%;
-    align-items: center;
-    margin-bottom: 55px;
+  border: 0.5px solid;
+  width: 60%;
+  align-items: center;
+  margin-bottom: 55px;
 }
 
 #printIcon {
-    background-color: rgba(255, 0, 0, 0.185);
+  background-color: rgba(255, 0, 0, 0.185);
 }
 
 #embroideryIcon {
-    background-color: rgba(0, 0, 255, 0.205);
+  background-color: rgba(0, 0, 255, 0.205);
 }
 
 #vinylIcon {
-    background-color: rgba(0, 128, 0, 0.219);
+  background-color: rgba(0, 128, 0, 0.219);
 }
 
 /* MEDIA QUERIES */
 /* 'Truthreads' */
 @media screen and (max-width: 600px) {
-    #intro h1 {
-        font-size: 5em;
-    }
+  #intro h1 {
+    font-size: 5em;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    #intro h1 {
-        font-size: 4em;
-        margin-left: 15%;
-    }
+  #intro h1 {
+    font-size: 4em;
+    margin-left: 15%;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    #intro h1 {
-        font-size: 3.5em;
-        margin-left: 15%;
-    }
+  #intro h1 {
+    font-size: 3.5em;
+    margin-left: 15%;
+  }
 }
 
 @media screen and (max-width: 350px) {
-    #intro h1 {
-        font-size: 2.5em;
-        margin-left: 15%;
-    }
+  #intro h1 {
+    font-size: 2.5em;
+    margin-left: 15%;
+  }
 }
 
 @media screen and (max-width: 250px) {
-    #intro h1 {
-        font-size: 2em;
-        margin-left: 15%;
-    }
+  #intro h1 {
+    font-size: 2em;
+    margin-left: 15%;
+  }
 }
 
 /* 'Custom Apparel' */
 @media screen and (max-width: 500px) {
-    #intro h3 {
-        font-size: 3em;
-        margin-left: 10%;
-    }
+  #intro h3 {
+    font-size: 3em;
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    #intro h3 {
-        font-size: 2.5em;
-        margin-left: 10%;
-    }
+  #intro h3 {
+    font-size: 2.5em;
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 350px) {
-    #intro h3 {
-        font-size: 2em;
-        margin-left: 10%;
-    }
+  #intro h3 {
+    font-size: 2em;
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 250px) {
-    #intro h3 {
-        font-size: 1.5em;
-        margin-left: 10%;
-    }
+  #intro h3 {
+    font-size: 1.5em;
+    margin-left: 10%;
+  }
 }
