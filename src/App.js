@@ -1,22 +1,29 @@
-import React from "react";
-import HeaderComp from "./Components/HeaderComp";
-import { FooterComp } from "./Components/FooterComp";
-import { IntroComp } from "./Components/IntroComp";
-import WelcomeReact from "./Components/WelcomeComp";
-import AboutComp from "./Components/AboutComp";
-import ContactComp from "./Components/ContactComp";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+// COMPONENTS
+import Header from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import About from './components/About';
+import Services from './components/Services';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <HeaderComp />
-      <IntroComp />
-      <WelcomeReact />
-      <ContactComp />
-      <AboutComp />
-      <FooterComp />
-    </>
+    <BrowserRouter>
+      <Header />
+      <Home />
+      <Switch>
+        <Route path='/about-us'>
+          <About />
+        </Route>
+        <Route path='/services'>
+          <Services />
+        </Route>
+      </Switch>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
