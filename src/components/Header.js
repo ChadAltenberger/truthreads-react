@@ -32,7 +32,7 @@ class Header extends Component {
           className='navbar navbar-expand-md navbar-light bg-white sticky-top'
         >
           <div id='mainNavbar' className='container-fluid'>
-            <NavbarBrand className='mr-auto' href='/'>
+            <NavbarBrand className='mr-auto' href='home'>
               <img
                 src='./assets/images/logo.png'
                 height='75'
@@ -44,7 +44,7 @@ class Header extends Component {
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Navbar className='ml-auto'>
                 <NavItem>
-                  <NavLink className='nav-link active' to='/'>
+                  <NavLink className='nav-link active' to='home'>
                     Home
                   </NavLink>
                 </NavItem>
@@ -58,9 +58,10 @@ class Header extends Component {
                     Services
                   </NavLink>
                 </NavItem>
-                <NavItem>Shop</NavItem>
                 <NavItem>
-                  <a href='#contactForm'>Contact</a>
+                  <NavLink className='nav-link' to='home/#contact'>
+                    Contact
+                  </NavLink>
                 </NavItem>
               </Navbar>
             </Collapse>

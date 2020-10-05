@@ -1,30 +1,18 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-// COMPONENTS
-import Header from './components/Header';
-import Home from './components/Home';
-import Footer from './components/Footer';
-import About from './components/About';
-import Services from './components/Services';
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './components/Main';
 import './App.css';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Header />
-      <Home />
-      <Switch>
-        <Route path='/about-us'>
-          <About />
-        </Route>
-        <Route path='/services'>
-          <Services />
-        </Route>
-      </Switch>
-      <Footer />
-    </BrowserRouter>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className='App'>
+          <Main />
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
