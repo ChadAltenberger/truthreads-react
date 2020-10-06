@@ -1,4 +1,4 @@
-export const FEATURED = [
+export const FEATURES = [
   {
     id: 0,
     name: 'O Grave Design Co.',
@@ -7,16 +7,17 @@ export const FEATURED = [
   },
   {
     id: 1,
-    name: 'Strong Water',
-    image: '/assets/images/hipster-shirt.jpg',
+    name: 'Hipster Wear',
+    image: '/assets/images/hipster-girl.jpg',
     details:
-      '1 screen print | Large print | Americana band based in Harrisonburg, VA'
+      '1 screen print | Large print | Fashion brand based in Harrisonburg, VA'
   },
   {
     id: 2,
-    name: 'Another Brand',
+    name: 'Look Right Tees',
     image: '/assets/images/hipster-shirt-2.jpg',
-    details: '4 screen print | Front & back | Another description'
+    details:
+      '4 screen print | Front & back | Another cool brand based in Coolville, CO'
   },
   {
     id: 3,

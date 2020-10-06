@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import {
   Navbar,
   Nav,
@@ -56,6 +56,11 @@ class Header extends Component {
                 <NavItem>
                   <NavLink className='nav-link' to='/services'>
                     Services
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className='nav-link' to='/featured'>
+                    Featured
                   </NavLink>
                 </NavItem>
                 <NavItem>

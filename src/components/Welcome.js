@@ -48,7 +48,7 @@ class Welcome extends Component {
               </p>
               <hr />
               <button type='button' className='btn btn-outline-dark btn-lg'>
-                Browse
+                <Link to='/featured'>Browse</Link>
               </button>
             </CardText>
           </CardBody>
