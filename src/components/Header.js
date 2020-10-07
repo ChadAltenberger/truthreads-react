@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import {
   Navbar,
   Nav,
@@ -8,6 +8,7 @@ import {
   Collapse
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 
 class Header extends Component {
   constructor(props) {
@@ -25,14 +26,15 @@ class Header extends Component {
   };
   render() {
     return (
-      <>
-        <Nav
-          navbar
+      <div>
+        <Navbar
+          light
+          color='light'
           id='homeNav'
           className='navbar navbar-expand-md navbar-light bg-white sticky-top'
         >
           <div id='mainNavbar' className='container-fluid'>
-            <NavbarBrand className='mr-auto' href='home'>
+            <NavbarBrand className='mr-auto' href='/'>
               <img
                 src='./assets/images/logo.png'
                 height='75'
@@ -42,9 +44,9 @@ class Header extends Component {
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Navbar className='ml-auto'>
+              <Nav className='ml-auto'>
                 <NavItem>
-                  <NavLink className='nav-link active' to='home'>
+                  <NavLink exact className='nav-link active' to='/'>
                     Home
                   </NavLink>
                 </NavItem>
@@ -64,15 +66,15 @@ class Header extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className='nav-link' to='home/#contact'>
+                  <NavHashLink className='nav-link' to='/#contactForm'>
                     Contact
-                  </NavLink>
+                  </NavHashLink>
                 </NavItem>
-              </Navbar>
+              </Nav>
             </Collapse>
           </div>
-        </Nav>
-      </>
+        </Navbar>
+      </div>
     );
   }
 }

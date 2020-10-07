@@ -1,12 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Modal, ModalBody, ModalHeader } from 'reactstrap';
 
 export default () => {
+  const [toggle, setToggle] = useState(false);
+
+  const paymentWindow = [
+    <Modal
+      className='modal-lg'
+      isOpen={toggle}
+      toggle={() => setToggle(!toggle)}
+    >
+      <ModalHeader id='paymentModalHeader' toggle={() => setToggle(!toggle)}>
+        Pay a Bill
+      </ModalHeader>
+      <ModalBody>
+        <div className='row justify-content-center'>
+          <p className='lead'>
+            Please follow the link below to make a secure payment via PayPal
+          </p>
+        </div>
+        <div className='row justify-content-center'>
+          <form
+            action='https://www.paypal.com/cgi-bin/webscr'
+            method='post'
+            target='_blank'
+          >
+            <input type='hidden' name='cmd' value='_s-xclick' />
+            <input
+              type='hidden'
+              name='hosted_button_id'
+              value='E4DZ8MMJKDMR2'
+            />
+            <input
+              type='image'
+              src='https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif'
+              border='0'
+              name='submit'
+              alt='PayPal - The safer, easier way to pay online!'
+            />
+            <img
+              alt=''
+              border='0'
+              src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif'
+              width='1'
+              height='1'
+            />
+          </form>
+        </div>
+      </ModalBody>
+    </Modal>
+  ];
+
   return (
     <>
       <div id='intro' className='container-fluid'>
         <div className='row'>
           <div className='col'>
-            <h1>Truthreads</h1>
+            <h1 id='introTitle'>Truthreads</h1>
           </div>
         </div>
         <div className='row'>
@@ -33,15 +83,14 @@ export default () => {
             </button>
           </div>
           <div className='col-md-2 text-center'>
-            <a
-              role='button'
+            <button
+              type='button'
               className='btn btn-info btn-lg'
-              href='#paymentModal'
-              data-toggle='modal'
-              data-target='#paymentModal'
+              onClick={() => setToggle(!toggle)}
             >
               Pay Bill
-            </a>
+            </button>
+            {toggle ? paymentWindow : null}
           </div>
         </div>
       </div>

@@ -15,10 +15,10 @@ class Main extends Component {
       <>
         <Header />
         <Switch>
-          <Route path='/Home' component={Home} />
           <Route exact path='/about-us' component={About} />
           <Route exact path='/services' component={Services} />
           <Route path='/featured' component={FeaturedWork} />
+          <Route path='/' component={Home} />
         </Switch>
         <Footer />
       </>

@@ -14,7 +14,7 @@ export default () => {
           <div className='col-9 text-center'>
             <h2>
               We're committed to providing the highest quality service, no
-              matter what you need.
+              matter what you may need.
             </h2>
           </div>
         </div>
