@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    // "start": "concurrently --kill-others-on-fail \"node server.js\" \"react-scripts start\"",
+    "chad": "concurrently --kill-others-on-fail \"node server.js\" \"react-scripts start\"",
     "predeploy": "npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
