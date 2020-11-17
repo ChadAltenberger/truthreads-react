@@ -33,7 +33,7 @@ class Header extends Component {
           id='homeNav'
           className='navbar navbar-expand-md navbar-light bg-white sticky-top'
         >
-          <div id='mainNavbar' className='container-fluid'>
+          <div id='mainNavbar' className='container-fluid sticky-top'>
             <NavbarBrand className='mr-auto' href='/'>
               <img
                 src='./assets/images/logo.png'
