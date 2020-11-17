@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* NAVIGATION */
 #homeNav {
   padding: 0;
 }
@@ -23,10 +29,7 @@
   color: lightgray;
 }
 
-body {
-  font-family: 'Rubik', sans-serif;
-}
-
+/* INTRO */
 #intro {
   margin: 0px;
   padding-top: 75px;
@@ -79,6 +82,7 @@ body {
   color: white;
 }
 
+/* WELCOME */
 #welcome {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -106,6 +110,7 @@ body {
   display: flex;
 }
 
+/* FEATURED WORK */
 #featureImage:hover {
   opacity: 0.7;
   transition-duration: 0.5;
@@ -120,11 +125,7 @@ body {
   min-height: 200px;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-  filter: invert(100%);
-}
-
+/* CONTACT FORM */
 #contactForm {
   background: rgba(0, 0, 0, 0.3);
   color: white;
@@ -145,15 +146,7 @@ a {
   cursor: pointer;
 }
 
-.site-footer {
-  padding: 25px;
-  border-top: solid 0.25px #d1d1d1;
-  background-color: #ebebeb;
-}
-.site-footer .btn {
-  color: black;
-}
-
+/* ABOUT */
 #aboutPhoto {
   max-width: 100%;
   height: auto;
@@ -196,6 +189,16 @@ a {
 
 #vinylIcon {
   background-color: rgba(0, 128, 0, 0.219);
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 25px;
+  border-top: solid 0.25px #d1d1d1;
+  background-color: #ebebeb;
+}
+.site-footer .btn {
+  color: black;
 }
 
 /* MEDIA QUERIES */

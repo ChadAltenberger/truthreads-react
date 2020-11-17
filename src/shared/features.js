@@ -7,7 +7,7 @@ export const FEATURES = [
   },
   {
     id: 1,
-    name: 'Hipster Wear',
+    name: 'Simple Visions Clothing',
     image: '/assets/images/hipster-girl.jpg',
     details:
       '2 screen | Front & back print | Fashion brand based in Harrisonburg, VA'
@@ -17,12 +17,13 @@ export const FEATURES = [
     name: 'Look Right Tees',
     image: '/assets/images/hipster-shirt-2.jpg',
     details:
-      '1 screen | Front print | Another cool brand based in Coolville, CO'
+      '1 screen | Front print | Minimalist Designs based in Charlotte, NC'
   },
   {
     id: 3,
-    name: 'Another Brand',
+    name: 'Billings Co.',
     image: '/assets/images/hat.jpg',
-    details: 'Embroidered hat | 2,000 stitch logo | Another description'
+    details:
+      'Embroidered hat | 2,000 stitch logo | Baseball Academy based in Phoenix, AZ'
   }
 ];
