@@ -31,9 +31,9 @@ class Header extends Component {
           light
           color='light'
           id='homeNav'
-          className='navbar navbar-expand-md navbar-light bg-white sticky-top'
+          className='navbar fixed-top navbar-expand-md navbar-light bg-white scrolling-navbar'
         >
-          <div id='mainNavbar' className='container-fluid sticky-top'>
+          <div id='mainNavbar' className='container-fluid'>
             <NavbarBrand className='mr-auto' href='/'>
               <img
                 src='./assets/images/logo.png'
