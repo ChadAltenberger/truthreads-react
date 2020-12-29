@@ -1,4 +1,10 @@
+# Custom Apparel Website
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+---
+
+> Website for a custom apparel company. Built with React.js, it provides a clean, user-friendly web presence for better marketability. 
 
 ## Available Scripts
 
